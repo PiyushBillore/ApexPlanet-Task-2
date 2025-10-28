@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyDash</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="intro">DailyDash</div>
+
+      <form id="todoForm">
+        <input type="text" placeholder="Enter Task" required id="todo" />
+        <textarea
+          name="desc"
+          rows="7"
+          cols="40"
+          id="desc"
+          placeholder="Enter description for this task (if any)"
+        ></textarea>
+        <div id="btn">
+          <input type="submit" value="Make Todo" id="AddTodo" />
+        </div>
+      </form>
+    </div>
+
+
+    <div class="tasks" id="taskSection"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

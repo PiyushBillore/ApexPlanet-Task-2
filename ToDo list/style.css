@@ -1,0 +1,167 @@
+* {
+  background-color: #0d1117;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  height: 500px;
+}
+
+#intro {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+  color: #ff7043;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+form {
+  height: auto;
+  display: grid;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: #ff7043 0px 4px 12px;
+}
+
+form input {
+  margin: 20px;
+  display: grid;
+  align-items: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+#todo {
+  width: 400px;
+  height: 40px;
+  color: white;
+  border: 1px solid #ff7043;
+  border-radius: 12px;
+  padding-left: 10px;
+}
+
+#desc {
+  color: white;
+  border: 1px solid #ff7043;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+#AddTodo {
+  border: 1px solid #ff7043;
+  color: white;
+  border-radius: 12px;
+  width: 125px;
+  padding: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#AddTodo:hover {
+  background-color: #ff7043;
+  color: #0d1117;
+}
+
+#btn {
+  margin: 5px;
+  height: 80px;
+  display: grid;
+  justify-content: center;
+}
+
+/* ----------------------- TASKS SECTION ----------------------- */
+
+.tasks {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px 0;
+}
+
+.task-card {
+  background-color: #161b22;
+  color: white;
+  border: 1px solid #ff7043;
+  border-radius: 15px;
+  padding: 20px;
+  width: 450px;
+  box-shadow: #ff7043 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+.task-card h3 {
+  color: #ff7043;
+  margin-bottom: 10px;
+}
+
+.task-card p {
+  color: #d3d3d3;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Status Section */
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.status.pending {
+  color: #ff9800;
+}
+
+.status.completed {
+  color: #4caf50;
+}
+
+/* Buttons */
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  background: none;
+  color: #ff7043;
+  border: 1px solid #ff7043;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #ff7043;
+  color: #0d1117;
+}
+
+.delete-btn {
+  background: none;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
